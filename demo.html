@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./modals.css" />
+  </head>
+  <body>
+    <button id="test">show</button>
+    <script type="module">
+      import Modals from './index.js'
+      let myModals = new Modals(
+        // 'contentcontentcontentcontentcontent',
+        confirm,
+        cancel
+      )
+      test.onclick = myModals.show
+      function cancel() {
+        alert('cancel')
+      }
+      function confirm() {
+        alert('confirm')
+      }
+    </script>
+  </body>
+</html>

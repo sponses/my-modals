@@ -1,0 +1,35 @@
+.modals {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.modals .modals-wrap {
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+  background: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.modals .modals-wrap .modals-header {
+  height: 20%;
+  border-bottom: 1px solid;
+  text-indent: 1em;
+}
+.modals .modals-wrap .modals-trunk {
+  flex: 1;
+}
+.modals .modals-wrap .modals-footer {
+  height: 20%;
+  border-top: 1px solid;
+}
