@@ -1,5 +1,5 @@
 /**
- * 移动弹出框组件
+ * 移动端弹出框组件
  * 2019/12/19
  */
 class Modals {
@@ -32,9 +32,10 @@ class Modals {
     container.className = 'modals'
 
     let header = title ? "<div class='modals-header'>" + title + '</div>' : ''
-    let trunk = "<div class='modals-trunk'>" + content + '</div>'
+    let trunk =
+      "<div class='modals-trunk'>" + '<div>' + content + '</div>' + '</div>'
     let footer =
-      "<div class='modals-footer'><span class='confirm'>确定</span><span class='cancel'>取消</span></div>"
+      "<div class='modals-footer'><div class='line'></div><span class='confirm'>确定</span><span class='cancel'>取消</span></div>"
     let wrap = "<div class='modals-wrap'>" + header + trunk + footer + '</div>'
     container.innerHTML = wrap
 

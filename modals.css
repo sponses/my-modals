@@ -17,19 +17,46 @@
   margin: auto;
   z-index: 99;
   background: #fff;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
 }
 .modals .modals-wrap .modals-header {
   height: 20%;
   border-bottom: 1px solid;
-  text-indent: 1em;
+  /* text-indent: 1em; */
 }
 .modals .modals-wrap .modals-trunk {
   flex: 1;
+  font-size: 30px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+.modals .modals-wrap .modals-trunk div {
+  width: 100%;
+  text-align: center;
 }
 .modals .modals-wrap .modals-footer {
-  height: 20%;
-  border-top: 1px solid;
+  height: 25%;
+  border-top: 0.5px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+}
+
+.modals .modals-wrap .modals-footer .confirm {
+  color: rgb(88, 109, 206);
+}
+
+.modals .modals-wrap .modals-footer .line {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-right: 0.5px solid #ccc;
 }

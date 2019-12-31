@@ -11,11 +11,7 @@
     <button id="test">show</button>
     <script type="module">
       import Modals from './index.js'
-      let myModals = new Modals(
-        // 'contentcontentcontentcontentcontent',
-        confirm,
-        cancel
-      )
+      let myModals = new Modals('内容内容内容', confirm, cancel)
       test.onclick = myModals.show
       function cancel() {
         alert('cancel')
